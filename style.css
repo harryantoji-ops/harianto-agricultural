@@ -117,9 +117,23 @@ header {
 }
 
 .hero h1 {
-    font-size: 55px;
+    font-size: 50px;
     line-height: 1.1;
     margin: 15px 0;
+   width: 0;
+   overflow: hidden;
+   white-space: nowrap;
+   animation: mengetik 3s linear infinite;
+}
+
+@keyframes mengetik {
+    from {
+        width: 0;
+
+    }
+    to {
+        width: 100%;
+    }
 }
 
 .hero h1 span {
